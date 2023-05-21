@@ -5270,6 +5270,10 @@ PrefabInstance:
       propertyPath: m_controlMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8748688856612009363, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
+      propertyPath: m_cameraTransform
+      value: 
+      objectReference: {fileID: 1361079519}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
 --- !u!1001 &207474271
@@ -26632,7 +26636,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1361079514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e93254159a56674e9c17cb4bc6906c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ab8c4fefdd31404f926be8414862dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
