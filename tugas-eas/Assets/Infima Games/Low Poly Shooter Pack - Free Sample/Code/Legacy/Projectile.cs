@@ -139,6 +139,17 @@ public class Projectile : MonoBehaviour {
 			//Destroy bullet object
 			Destroy(gameObject);
 		}
+		// If bullet collides with "Zombie" tag
+		if (collision.transform.tag == "Zombie") 
+		{
+			var healthcomponent = collision.gameObject.GetComponent<HealthScript>();
+			if(healthcomponent != null)
+			{
+				healthcomponent.TakeDamage(10);
+			}
+			//Destroy bullet object
+			Destroy(gameObject);
+		}
 	}
 
 	private IEnumerator DestroyTimer () 
