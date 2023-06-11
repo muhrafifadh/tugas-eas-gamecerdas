@@ -9,7 +9,9 @@ public class ZombieController : MonoBehaviour
     private CharacterStats stats = null;
     private bool isPlayerInCollision = false;
     private float damageTimer = 0f;
-    private float damageInterval = .2f;
+    private float damageInterval = 1f;
+
+    private int attackDamage = 10;
     // Start is called before the first frame update
     private void Start()
     {

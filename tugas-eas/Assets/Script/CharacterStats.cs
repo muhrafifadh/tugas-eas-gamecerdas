@@ -17,10 +17,9 @@ public class CharacterStats : MonoBehaviour
     {
         currentHealth -= amount;
         Debug.Log("Damage");
-        // if(currentHealth <= 0)
-        // {
-        //     UnityEditor.EditorApplication.isPlaying = false;
-        // }
-
+        if(currentHealth <= 0)
+        {
+             UnityEditor.EditorApplication.isPlaying = false;
+        }
     }
 }
