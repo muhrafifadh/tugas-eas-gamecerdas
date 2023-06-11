@@ -142,6 +142,11 @@ public class Projectile : MonoBehaviour {
 		// If bullet collides with "Zombie" tag
 		if (collision.transform.tag == "Zombie") 
 		{
+			//Instantiate random impact prefab from array
+			Instantiate (bloodImpactPrefabs [Random.Range 
+				(0, bloodImpactPrefabs.Length)], transform.position, 
+				Quaternion.LookRotation (collision.contacts [0].normal));
+				
 			var healthcomponent = collision.gameObject.GetComponent<HealthScript>();
 			if(healthcomponent != null)
 			{
