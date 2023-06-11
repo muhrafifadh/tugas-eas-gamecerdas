@@ -12882,7 +12882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1190601789873990, guid: a8145fd98e506094980d05080bde9072, type: 3}
       propertyPath: m_TagString
-      value: Zombie
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4257605397364450, guid: a8145fd98e506094980d05080bde9072, type: 3}
       propertyPath: m_RootOrder
@@ -12931,7 +12931,7 @@ PrefabInstance:
     - target: {fileID: 54174046382449110, guid: a8145fd98e506094980d05080bde9072,
         type: 3}
       propertyPath: m_Mass
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 54174046382449110, guid: a8145fd98e506094980d05080bde9072,
         type: 3}
