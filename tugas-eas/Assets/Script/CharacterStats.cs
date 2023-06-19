@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterStats : MonoBehaviour
 {
@@ -19,7 +20,20 @@ public class CharacterStats : MonoBehaviour
         Debug.Log("Damage");
         if(currentHealth <= 0)
         {
-             UnityEditor.EditorApplication.isPlaying = false;
+            UnlockCursor();
+            LoadGameOverScene();
         }
+    }
+
+    // Stop locking the cursor
+    private void UnlockCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    private void LoadGameOverScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
